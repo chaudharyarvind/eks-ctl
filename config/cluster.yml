@@ -1,0 +1,12 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: eksctl-test
+  region: ap-southeast-2
+  tags:
+    Name: Eks Demo
+    Owner: Arvind
+vpc:
+  cidr: 10.50.0.0/16    
+

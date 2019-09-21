@@ -15,3 +15,8 @@ Set up AWS credentials on the PATH and Run
 ```
 docker run -e AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY -e AWS_SESSION_TOKEN eksctl get cluster
 ```
+
+Create EKS Cluster
+```
+docker run -e AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY -e AWS_SESSION_TOKEN -v $(pwd)/config:/config
+```
